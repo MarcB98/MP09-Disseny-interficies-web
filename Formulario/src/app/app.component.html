@@ -6,15 +6,15 @@
   <input type="text" #vDNI id="" placeholder="Escribe tu dni">
 
   <div [ngSwitch]="mostrarInfo">
-    <div class="correcto" *ngSwitchCase="'DNI correcto'">DNI Correcto</div>
-    <div class="incorrecto" *ngSwitchCase="'DNI incorrecto'">DNI Incorrecto</div>
+    <div class="correcto" style="cursor: pointer;" *ngSwitchCase="'DNI correcto'">DNI Correcto</div>
+    <div class="incorrecto" style="cursor: pointer;" *ngSwitchCase="'DNI incorrecto'">DNI Incorrecto</div>
   </div>
 
   <label for="mensaje">Mensaje</label>
   <textarea type="text" id="" #vMensaje placeholder="Escribe tu mensaje" ></textarea>
 
   <div [ngSwitch]="mostrarInfo2">
-    <div class="mensaje" *ngSwitchCase="'Mensaje demasiado corto'">Mensaje demasiado corto</div>
+    <div class="mensaje" style="cursor: pointer;" *ngSwitchCase="'Mensaje demasiado corto'">Mensaje demasiado corto</div>
   </div>
 
   <input type="button" (click)="enviarDatos(vName, vDNI.value, vMensaje.value)" value="Enviar">

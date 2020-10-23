@@ -36,6 +36,7 @@ input, textarea {
 .incorrecto{
   color: red;
 }
+
 .mensaje{
   color: red;
   text-align: right;
