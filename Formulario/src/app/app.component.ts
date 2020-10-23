@@ -9,9 +9,10 @@ export class AppComponent {
   title = 'Formulario';
 
   mostrarInfo: string = "";
+  mostrarInfo2: string = "";
   erDNI = '^[0-9]{8}[A-Za-z]{1}$';
 
-  enviarDatos(nombre, dni){
+  enviarDatos(nombre, dni, mensaje){
     if(nombre.value == ""){
       alert("El nombre esta vacio");
     }
@@ -20,6 +21,10 @@ export class AppComponent {
       this.mostrarInfo = "DNI correcto";
     }else{
       this.mostrarInfo = "DNI incorrecto";
+    }
+
+    if (mensaje.length <2) {
+      this.mostrarInfo2 = "Mensaje demasiado corto";
     }
   }
 

@@ -1,10 +1,13 @@
 h1{
+    /*ESTILO DE LA ETIQUETA H1*/
     color: white;
 }
 div{
+    /*ESTILO DE LA ETIQUETA DIV*/
     color: white;
 }
 aside{
+    /*ESTILO DE LA ETIQUETA ASIDE*/
     margin-right: 25px;
     float: right;
 }
